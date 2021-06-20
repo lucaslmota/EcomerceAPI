@@ -1,4 +1,6 @@
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using Ecomerce.Domain.Entities;
 
 namespace Ecomerce.API.ViewModels
 {

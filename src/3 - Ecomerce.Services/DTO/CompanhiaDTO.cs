@@ -1,3 +1,6 @@
+using System.Collections.Generic;
+using Ecomerce.Domain.Entities;
+
 namespace Ecomerce.Services.DTO
 {
     public class CompanhiaDTO
