@@ -2,6 +2,8 @@ using System;
 using Ecomerce.API.Token;
 using Ecomerce.API.Utilities;
 using Ecomerce.API.ViewModels;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 
@@ -20,6 +22,8 @@ namespace Ecomerce.API.Controllers
         }
 
         [HttpPost]
+        [AllowAnonymous]
+        [EnableCors("MyPolicy")]
         [Route("/api/v1/auth/login")]
         public IActionResult Login([FromBody]LoginViewModel loginViewModel){
             try

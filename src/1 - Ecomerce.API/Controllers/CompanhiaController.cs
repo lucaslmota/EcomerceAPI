@@ -24,7 +24,6 @@ namespace Ecomerce.API.Controllers
         }
 
         [HttpPost]
-        [Authorize]
         [Route("api/v1/companhia/create")]
         public async Task<IActionResult> Create ([FromBody] CriandoCompanhiaViewModel companhiaViewModel)
         {
